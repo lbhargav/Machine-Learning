@@ -1,0 +1,427 @@
+Log of all classifiers:
+
+KNeighborsClassifier:
+knn=KNeighborsClassifier(n_neighbors = 1)
+Model :K nearest neighbour Accuracy : 0.950745397978
+Model :K nearest neighbour F1_score : 0.933190283374
+knn=KNeighborsClassifier(n_neighbors = 3)
+Model :K nearest neighbour Accuracy : 0.964752398237
+Model :K nearest neighbour F1_score : 0.950532530513
+knn=KNeighborsClassifier(n_neighbors = 4)
+Model :K nearest neighbour Accuracy : 0.964783726558
+Model :K nearest neighbour F1_score : 0.94990401269
+knn=KNeighborsClassifier(n_neighbors = 5)
+Model :K nearest neighbour Accuracy : 0.966569440843
+Model :K nearest neighbour F1_score : 0.953468772357
+knn=KNeighborsClassifier(n_neighbors = 7)
+Model :K nearest neighbour Accuracy : 0.968355155129
+Model :K nearest neighbour F1_score : 0.955683611781
+knn=KNeighborsClassifier(n_neighbors = 10)
+Model :K nearest neighbour Accuracy : 0.964939287875
+Model :K nearest neighbour F1_score : 0.949918754046
+knn=KNeighborsClassifier(n_neighbors = 15)
+Model :K nearest neighbour Accuracy : 0.961399187624
+Model :K nearest neighbour F1_score : 0.944796802826
+knn=KNeighborsClassifier(n_neighbors = 20)
+Model :K nearest neighbour Accuracy : 0.954441059545
+Model :K nearest neighbour F1_score : 0.93426893568
+
+SVM
+For C= 1, kernel=linear
+Accuracy Avg :0.975496931985 F1 avg = 0.966485709823
+For C= 11
+Accuracy Avg :0.972019488376 F1 avg = 0.962181616833
+For C= 21
+Accuracy Avg :0.968510716446 F1 avg = 0.957411609
+For C= 31
+Accuracy Avg :0.966756330481 F1 avg = 0.954719301308
+For C= 41
+Accuracy Avg :0.966756330481 F1 avg = 0.954719301308
+For C= 51
+Accuracy Avg :0.964939287875 F1 avg = 0.952512564954
+For C= 61
+Accuracy Avg :0.96318490191 F1 avg = 0.95039840005
+For C= 71
+Accuracy Avg :0.961430515945 F1 avg = 0.947843231641
+For C= 81
+Accuracy Avg :0.959706378014 F1 avg = 0.945814246133
+For C= 91
+Accuracy Avg :0.963246478265 F1 avg = 0.950564069953
+
+with kernel=rbf :
+For C= 1
+Accuracy Avg :0.977189741595 F1 avg = 0.968807173793
+For C= 11
+Accuracy Avg :0.973773874341 F1 avg = 0.964131803567
+For C= 21
+Accuracy Avg :0.968478307839 F1 avg = 0.958174893205
+For C= 31
+Accuracy Avg :0.968478307839 F1 avg = 0.958072659459
+For C= 41
+Accuracy Avg :0.966785498228 F1 avg = 0.956154415923
+For C= 51
+Accuracy Avg :0.965031112263 F1 avg = 0.953831535551
+For C= 61
+Accuracy Avg :0.963245397978 F1 avg = 0.951505954156
+For C= 71
+Accuracy Avg :0.963245397978 F1 avg = 0.951505954156
+For C= 81
+Accuracy Avg :0.961460763979 F1 avg = 0.948393462782
+For C= 91
+Accuracy Avg :0.961460763979 F1 avg = 0.948393462782
+
+Logisitic Regression :
+For C= 1
+Accuracy Avg :0.982485308098 F1 avg = 0.976053444255
+For C= 2
+Accuracy Avg :0.980730922133 F1 avg = 0.973730563884
+For C= 3
+Accuracy Avg :0.978945207847 F1 avg = 0.971404982488
+For C= 4
+Accuracy Avg :0.977221069916 F1 avg = 0.969081750165
+For C= 5
+Accuracy Avg :0.975496931985 F1 avg = 0.966960538044
+For C= 6
+Accuracy Avg :0.97725131795 F1 avg = 0.969515706453
+For C= 7
+Accuracy Avg :0.97725131795 F1 avg = 0.969515706453
+For C= 8
+Accuracy Avg :0.975496931985 F1 avg = 0.967300867029
+For C= 9
+Accuracy Avg :0.975496931985 F1 avg = 0.967300867029
+
+For max_iter= 50
+Accuracy Avg :0.982485308098 F1 avg = 0.976053444255
+For max_iter= 150
+Accuracy Avg :0.982485308098 F1 avg = 0.976053444255
+For max_iter= 250
+Accuracy Avg :0.982485308098 F1 avg = 0.976053444255
+For max_iter= 350
+Accuracy Avg :0.982485308098 F1 avg = 0.976053444255
+For max_iter= 450
+Accuracy Avg :0.982485308098 F1 avg = 0.976053444255
+For max_iter= 550
+Accuracy Avg :0.982485308098 F1 avg = 0.976053444255
+For max_iter= 650
+Accuracy Avg :0.982485308098 F1 avg = 0.976053444255
+For max_iter= 750
+Accuracy Avg :0.982485308098 F1 avg = 0.976053444255
+For max_iter= 850
+Accuracy Avg :0.982485308098 F1 avg = 0.976053444255
+For max_iter= 950
+Accuracy Avg :0.982485308098 F1 avg = 0.976053444255
+
+
+Decision Tree:
+Gini:
+For max_depth= 1
+Accuracy Avg :0.889394823265 F1 avg = 0.844635093148
+For max_depth= 4
+Accuracy Avg :0.914144196699 F1 avg = 0.87621299793
+For max_depth= 7
+Accuracy Avg :0.915901823524 F1 avg = 0.887655866967
+For max_depth= 10
+Accuracy Avg :0.900078860945 F1 avg = 0.889379254579
+For max_depth= 13
+Accuracy Avg :0.928030204822 F1 avg = 0.888961855057
+For max_depth= 16
+Accuracy Avg :0.915777590528 F1 avg = 0.875779727286
+For max_depth= 19
+Accuracy Avg :0.915778670815 F1 avg = 0.879576673564
+For max_depth= 22
+Accuracy Avg :0.915870495204 F1 avg = 0.894574455305
+For max_depth= 25
+Accuracy Avg :0.917594633135 F1 avg = 0.885297715784
+For max_depth= 28
+Accuracy Avg :0.917470400138 F1 avg = 0.868579547055
+
+Entropy:
+For max_depth= 1
+Accuracy Avg :0.882407527439 F1 avg = 0.831686854796
+For max_depth= 4
+Accuracy Avg :0.940525883675 F1 avg = 0.914411514691
+For max_depth= 7
+Accuracy Avg :0.935106084176 F1 avg = 0.90594375655
+For max_depth= 10
+Accuracy Avg :0.938740169389 F1 avg = 0.906044055084
+For max_depth= 13
+Accuracy Avg :0.933352778498 F1 avg = 0.914606838778
+For max_depth= 16
+Accuracy Avg :0.928028044249 F1 avg = 0.915401595276
+For max_depth= 19
+Accuracy Avg :0.929812678247 F1 avg = 0.905011973471
+For max_depth= 22
+Accuracy Avg :0.935015340074 F1 avg = 0.917747351788
+For max_depth= 25
+Accuracy Avg :0.933291202143 F1 avg = 0.908476607091
+For max_depth= 28
+Accuracy Avg :0.933445683173 F1 avg = 0.920639714001 
+
+perception:
+For alpha= 0.0001
+Accuracy Avg :0.971925503414 F1 avg = 0.962473813001
+For alpha= 1.0001
+Accuracy Avg :0.971925503414 F1 avg = 0.962473813001
+For alpha= 2.0000999999999998
+Accuracy Avg :0.971925503414 F1 avg = 0.962473813001
+For alpha= 3.0000999999999998
+Accuracy Avg :0.971925503414 F1 avg = 0.962473813001
+For alpha= 4.0001
+Accuracy Avg :0.971925503414 F1 avg = 0.962473813001
+For alpha= 5.0001
+Accuracy Avg :0.971925503414 F1 avg = 0.962473813001
+For alpha= 6.0001
+Accuracy Avg :0.971925503414 F1 avg = 0.962473813001
+For alpha= 7.0001
+Accuracy Avg :0.971925503414 F1 avg = 0.962473813001
+For alpha= 8.0001
+Accuracy Avg :0.971925503414 F1 avg = 0.962473813001
+For alpha= 9.0001
+Accuracy Avg :0.971925503414 F1 avg = 0.962473813001
+
+For eta0= 1
+Accuracy Avg :0.971925503414 F1 avg = 0.962473813001
+For eta0= 2
+Accuracy Avg :0.971925503414 F1 avg = 0.962473813001
+For eta0= 3
+Accuracy Avg :0.971925503414 F1 avg = 0.962473813001
+For eta0= 4
+Accuracy Avg :0.971925503414 F1 avg = 0.962473813001
+For eta0= 5
+Accuracy Avg :0.971925503414 F1 avg = 0.962473813001
+For eta0= 6
+Accuracy Avg :0.971925503414 F1 avg = 0.962473813001
+For eta0= 7
+Accuracy Avg :0.971925503414 F1 avg = 0.962473813001
+For eta0= 8
+Accuracy Avg :0.971925503414 F1 avg = 0.962473813001
+For eta0= 9
+Accuracy Avg :0.971925503414 F1 avg = 0.962473813001
+
+Neural Network:
+hidden layer= 1, Neurons = 3, Activation function = relu
+Accuracy Avg :0.943262250454 F1 avg = 0.868608612664
+hidden layer= 2, Neurons = 4
+Accuracy Avg :0.971957912021 F1 avg = 0.964295851309
+hidden layer= 3, Neurons = 5
+Accuracy Avg :0.980700674099 F1 avg = 0.970828133863
+hidden layer= 4, Neurons = 6
+Accuracy Avg :0.971927663988 F1 avg = 0.966196283391
+hidden layer= 1, Neurons = 3, Activation function = logistic
+Accuracy Avg :0.907015383286 F1 avg = 0.868037166086
+hidden layer= 2
+Accuracy Avg :0.978945207847 F1 avg = 0.968037166086
+hidden layer= 3
+Accuracy Avg :0.978945207847 F1 avg = 0.970598141696
+hidden layer= 4
+Accuracy Avg :0.978945207847 F1 avg = 0.970598141696
+hidden layer= 5
+Accuracy Avg :0.978945207847 F1 avg = 0.968037166086
+hidden layer= 6
+Accuracy Avg :0.978945207847 F1 avg = 0.970598141696
+hidden layer= 7
+Accuracy Avg :0.978945207847 F1 avg = 0.970598141696
+hidden layer= 1, Neurons = 3, Activation function = tanh
+Accuracy Avg :0.973712297986 F1 avg = 0.970928034907
+hidden layer= 2
+Accuracy Avg :0.978975455881 F1 avg = 0.971050338078
+hidden layer= 3
+Accuracy Avg :0.975436435917 F1 avg = 0.964190511386
+hidden layer= 4
+Accuracy Avg :0.977190821882 F1 avg = 0.963957449874
+hidden layer= 5
+Accuracy Avg :0.973712297986 F1 avg = 0.96873561398
+hidden layer= 6
+Accuracy Avg :0.975498012272 F1 avg = 0.966513391757
+hidden layer= 7
+Accuracy Avg :0.978975455881 F1 avg = 0.966513391757
+
+Deep Learning:
+hidden_layer_sizes=(10, 10), activation='relu', alpha=1, max_iter=2000, learning_rate='adaptive'
+Accuracy Avg :0.975436435917 F1 avg = 0.973952416148
+hidden_layer_sizes=(20, 15)
+Accuracy Avg :0.978975455881 F1 avg = 0.967062206497
+hidden_layer_sizes=(40, 25)
+Accuracy Avg :0.980669345778 F1 avg = 0.966704861063
+hidden_layer_sizes=(10, 10), activation='logistic', alpha=1, max_iter=2000, learning_rate='adaptive'
+Accuracy Avg :0.977190821882 F1 avg = 0.968042973287
+hidden_layer_sizes=(20, 15)
+Accuracy Avg :0.977190821882 F1 avg = 0.965481997677
+hidden_layer_sizes=(30, 25)
+Accuracy Avg :0.975466683951 F1 avg = 0.965481997677
+hidden_layer_sizes=(40, 25)
+Accuracy Avg :0.975466683951 F1 avg = 0.965481997677
+hidden_layer_sizes=(10, 10), activation='tanh', alpha=1, max_iter=2000, learning_rate='adaptive'
+Accuracy Avg :0.975436435917 F1 avg = 0.969074367367
+hidden_layer_sizes=(20, 15), activation='tanh', alpha=1, max_iter=2000, learning_rate='adaptive'
+Accuracy Avg :0.975466683951 F1 avg = 0.963855216127
+hidden_layer_sizes=(40, 25), activation='tanh'
+Accuracy Avg :0.978914959813 F1 avg = 0.971391088586
+
+RandomForestRegressor:
+max_depth= 2 n_estimators= 7 criterion='gini'
+Accuracy Avg :0.936683303085 F1 avg = 0.92929690622
+max_depth= 4 n_estimators= 9 criterion='gini'
+Accuracy Avg :0.957860167661 F1 avg = 0.929710355272
+max_depth= 6 n_estimators= 11 criterion='gini'
+Accuracy Avg :0.961339771843 F1 avg = 0.94431168913
+max_depth= 8 n_estimators= 13 criterion='gini'
+Accuracy Avg :0.963062829488 F1 avg = 0.940500731154
+max_depth= 10 n_estimators= 15 criterion='gini'
+Accuracy Avg :0.950750799412 F1 avg = 0.950109669747
+max_depth= 12 n_estimators= 17 criterion='gini'
+Accuracy Avg :0.961338691556 F1 avg = 0.939494210334
+max_depth= 14 n_estimators= 19 criterion='gini'
+Accuracy Avg :0.95065681445 F1 avg = 0.938694339001
+max_depth= 16 n_estimators= 21 criterion='gini'
+Accuracy Avg :0.964848543773 F1 avg = 0.951510690734
+max_depth= 18 n_estimators= 23 criterion='gini'
+Accuracy Avg :0.966571601417 F1 avg = 0.953588022553
+max_depth= 2 n_estimators= 7 criterion='entropy'
+Accuracy Avg :0.93661848587 F1 avg = 0.904355429714
+max_depth= 4 n_estimators= 9 criterion='entropy'
+Accuracy Avg :0.961370019877 F1 avg = 0.937339598071
+max_depth= 6 n_estimators= 11 criterion='entropy'
+Accuracy Avg :0.964848543773 F1 avg = 0.93590884725
+max_depth= 8 n_estimators= 13 criterion='entropy'
+Accuracy Avg :0.950750799412 F1 avg = 0.936973268743
+max_depth= 10 n_estimators= 15 criterion='entropy'
+Accuracy Avg :0.959554057558 F1 avg = 0.947400607933
+max_depth= 12 n_estimators= 17 criterion='entropy'
+Accuracy Avg :0.957768343272 F1 avg = 0.949503931911
+max_depth= 14 n_estimators= 19 criterion='entropy'
+Accuracy Avg :0.961307363236 F1 avg = 0.95417390009
+max_depth= 16 n_estimators= 21 criterion='entropy'
+Accuracy Avg :0.970080373347 F1 avg = 0.938810577775
+max_depth= 18 n_estimators= 23 criterion='entropy'
+Accuracy Avg :0.963031501167 F1 avg = 0.946372678812
+
+BaggingClassifier:
+max_features= 2 n_estimators= 7
+Accuracy Avg :0.929570693976 F1 avg = 0.928291258751
+max_features= 4 n_estimators= 9
+Accuracy Avg :0.950718390805 F1 avg = 0.925401933102
+max_features= 6 n_estimators= 11
+Accuracy Avg :0.954228243021 F1 avg = 0.948971509048
+max_features= 8 n_estimators= 13
+Accuracy Avg :0.950689223058 F1 avg = 0.942782299412
+max_features= 10 n_estimators= 15
+Accuracy Avg :0.954414052372 F1 avg = 0.93411710241
+max_features= 12 n_estimators= 17
+Accuracy Avg :0.954321147697 F1 avg = 0.948928273151
+max_features= 14 n_estimators= 19
+Accuracy Avg :0.959522729237 F1 avg = 0.932862114662
+max_features= 16 n_estimators= 21
+Accuracy Avg :0.968357315703 F1 avg = 0.941445889146
+max_features= 18 n_estimators= 23
+Accuracy Avg :0.961401348198 F1 avg = 0.954096417542
+max_features= 20 n_estimators= 25
+Accuracy Avg :0.959554057558 F1 avg = 0.938235727215
+max_features= 22 n_estimators= 27
+Accuracy Avg :0.961401348198 F1 avg = 0.937000825262
+max_features= 24 n_estimators= 29
+Accuracy Avg :0.957861247947 F1 avg = 0.935976442195
+max_features= 26 n_estimators= 31
+Accuracy Avg :0.966634258059 F1 avg = 0.934546104713
+max_features= 28 n_estimators= 33
+max_features= 2 n_estimators= 7
+Accuracy Avg :0.949119566157 F1 avg = 0.917896519647
+max_features= 4 n_estimators= 9
+Accuracy Avg :0.95247277677 F1 avg = 0.945335903461
+max_features= 6 n_estimators= 11
+Accuracy Avg :0.950812375767 F1 avg = 0.938300575476
+max_features= 8 n_estimators= 13
+Accuracy Avg :0.956015037594 F1 avg = 0.931388668998
+max_features= 10 n_estimators= 15
+Accuracy Avg :0.948902428485 F1 avg = 0.931014539126
+max_features= 12 n_estimators= 17
+Accuracy Avg :0.943638190303 F1 avg = 0.941778587266
+max_features= 14 n_estimators= 19
+Accuracy Avg :0.952566761732 F1 avg = 0.924884350037
+max_features= 16 n_estimators= 21
+Accuracy Avg :0.947271195229 F1 avg = 0.94184041521
+max_features= 18 n_estimators= 23
+Accuracy Avg :0.952536513698 F1 avg = 0.935444359404
+max_features= 20 n_estimators= 25
+Accuracy Avg :0.957892576268 F1 avg = 0.92986639188
+max_features= 22 n_estimators= 27
+Accuracy Avg :0.957797511019 F1 avg = 0.931108261185
+max_features= 24 n_estimators= 29
+Accuracy Avg :0.957891495981 F1 avg = 0.928999544057
+max_features= 26 n_estimators= 31
+Accuracy Avg :0.945454152623 F1 avg = 0.93592090836
+max_features= 28 n_estimators= 33
+
+GradientBoosting:
+n_estimators= 50, learning_rate=1.0
+Accuracy Avg :0.952473857056 F1 avg = 0.931786885914
+n_estimators= 70
+Accuracy Avg :0.952505185377 F1 avg = 0.937324816105
+n_estimators= 90
+Accuracy Avg :0.952505185377 F1 avg = 0.942181869621
+n_estimatorss= 110
+Accuracy Avg :0.955982628986 F1 avg = 0.931818249501
+n_estimators= 130
+Accuracy Avg :0.950688142771 F1 avg = 0.932212333033
+n_estimators= 150
+Accuracy Avg :0.955982628986 F1 avg = 0.942659337889
+n_estimators= 170
+Accuracy Avg :0.959522729237 F1 avg = 0.937184975798
+n_estimators= 190
+Accuracy Avg :0.952505185377 F1 avg = 0.931806635099
+n_estimators=50 learning_rate = 0.1
+Accuracy Avg :0.957829919627 F1 avg = 0.946961027661
+n_estimators=50 learning_rate = 0.30000000000000004
+Accuracy Avg :0.959585385878 F1 avg = 0.943473301766
+n_estimators=50 learning_rate = 0.5
+Accuracy Avg :0.966541353383 F1 avg = 0.953501274675
+n_estimators=50 learning_rate = 0.7
+Accuracy Avg :0.954290899663 F1 avg = 0.939083930502
+n_estimators=50 learning_rate = 0.8999999999999999
+Accuracy Avg :0.954259571342 F1 avg = 0.927213970249
+n_estimators=50 learning_rate = 1.0999999999999999
+Accuracy Avg :0.956106861983 F1 avg = 0.93897986837
+n_estimators=50 learning_rate = 1.2999999999999998
+Accuracy Avg :0.941977789301 F1 avg = 0.922909162118
+n_estimators=50 learning_rate = 1.4999999999999998
+Accuracy Avg :0.950750799412 F1 avg = 0.934760832537
+n_estimators=50 learning_rate = 1.6999999999999997
+Accuracy Avg :0.950842623801 F1 avg = 0.930102539737
+n_estimators=50 learning_rate = 1.8999999999999997
+Accuracy Avg :0.938467937084 F1 avg = 0.928298840686
+
+AdaBoosting:
+n_estimators = 10
+Accuracy Avg :0.947270114943 F1 avg = 0.925852907604
+n_estimators = 30
+Accuracy Avg :0.961213378273 F1 avg = 0.951203296473
+n_estimators = 50
+Accuracy Avg :0.97358806499 F1 avg = 0.963817098419
+n_estimators = 70
+Accuracy Avg :0.971802350704 F1 avg = 0.9599436954
+n_estimators = 90
+Accuracy Avg :0.978945207847 F1 avg = 0.973933242438
+n_estimators = 110
+Accuracy Avg :0.97007929306 F1 avg = 0.959503931911
+n_estimators = 130
+Accuracy Avg :0.980730922133 F1 avg = 0.9736951472
+n_estimators = 150
+Accuracy Avg :0.980730922133 F1 avg = 0.9736951472
+n_estimators = 170
+Accuracy Avg :0.977190821882 F1 avg = 0.968677258112
+n_estimators = 190
+Accuracy Avg :0.978945207847 F1 avg = 0.971369565805
+
+
+
+
+
+
+
+
+
+
+
+
+
+
