@@ -13,6 +13,7 @@ class Neuron():
         self.inFlag=flag
         self.deltaWeights=[]
         self.delta=0
+        
     def sigmoid(self):
         sum=0
         if self.inFlag==1:
@@ -22,6 +23,7 @@ class Neuron():
                 sum+=self.inputX[i]*self.inWeights[i]
                 self.outY=1.0/(1.0+np.exp(-sum))
         return self.outY
+    
     def calDelta(self,nextLayer,neuronIndex,outLayFlag,target):
         sumTerm=0
         if(outLayFlag==1):
@@ -29,20 +31,16 @@ class Neuron():
             return self.delta
         for nextNeuron in range(len(nextLayer)):
             sumTerm+=nextLayer[nextNeuron].inWeights[neuronIndex+1]*nextLayer[nextNeuron].delta
-            #self.delta=self.outY*(1-self.outY)*sumTerm
         self.delta = self.outY * (1 - self.outY) * sumTerm
         return self.delta
+    
     def calDeltaWeights(self,prevLayer):
         eta=0.5
         self.deltaWeights=[]
         self.deltaWeights.append(eta * self.delta)
         for neuronIndex in range(len(prevLayer)):
-            #self.deltaWeights[neuronIndex]=eta*self.delta*prevLayer[neuronIndex].outY
-            #self.deltaWeights.append(eta * self.delta)
             self.deltaWeights.append(eta * self.delta * prevLayer[neuronIndex].outY)
-            #print(self.deltaWeights)
-        #for i in range(len(self.inWeights)):
-         #   self.inWeights[i]+=self.deltaWeights[i]
+            
     def updateWeights(self):
         for i in range(len(self.inWeights)):
             self.inWeights[i]+=self.deltaWeights[i]
@@ -50,11 +48,7 @@ class Neuron():
     def updateInputs(self,inputs):
         self.inputX=inputs
 
-
-
-
 trainPercent=int(sys.argv[2])
-
 
 hidLayCount=int(sys.argv[4])
 neuronCount=[]
@@ -64,7 +58,6 @@ maxIterations=float(sys.argv[3])
 inputs=[]
 instances=0
 classCount=0
-#allWeights=[[-.4 ,0.2,.4,.5],[0.2,-.3,.1,.2],[.1,-.3,-.2]]
 file = open(str(sys.argv[1]))
 
 data = [[]]
@@ -75,12 +68,6 @@ for line in file:
 data.remove([])
 classList=[]
 inputData=[[]]
-#print(data)
-
-#print(data)
-
-
-
 inputCount=len(data[0])-1
 layers=[[]]
 #print(inputCount)
@@ -92,36 +79,23 @@ def createNetwork():
         allWeightsIndex = 0
         if (l != totLayCount - 1) and l != 0:
             for n in range(neuronCount[l-1]):
-                thisWeights=[random.uniform(0,1)]
-                #thisWeights = [1]
+                thisWeights=[random.uniform(0,1))
                 thisInputs = [1]
                 for i in range(len(layers[l - 1])):
-                    #thisInputs.append(layers[l - 1][i].outY)
                     thisWeights.append(random.uniform(0,1))
-                    #thisWeights.append(1)
-                    # thisWeights=allWeights[allWeightsIndex]
-                    # allWeightsIndex+=1
                 neurons.append(Neuron(thisWeights, thisInputs, 0))
-                #neurons[n].sigmoid()
             layers.append(neurons)
         elif l == 0:
             for i in range(inputCount):
                 thisInputs = []
-                #thisInputs.append(float(data[0][i]))
                 neurons.append(Neuron(0, thisInputs, 1))
-                #neurons[i].sigmoid()
             layers[l] = neurons
         else:
             thisWeights = [random.uniform(0,1)]
-            #thisWeights = [1]
-            # thisWeights = allWeights[allWeightsIndex]
             thisInputs = [1]
             for i in range(len(layers[l - 1])):
-                #thisInputs.append(layers[l - 1][i].outY)
                 thisWeights.append(random.uniform(0, 1))
-                #thisWeights.append(1)
             neurons.append(Neuron(thisWeights, thisInputs, 0))
-            #neurons[0].sigmoid()
             layers.append(neurons)
 
 
@@ -167,15 +141,7 @@ def trainNetwork(instance):
 
 def testNetwork(instance):
     forwardPass(instance)
-
-'''iterations=1000
-maxIterations=iterations/len(data)
-for itr in range(maxIterations)
-    for entry in data:
-        trainNetwork(entry)
-
-'''
-
+    
 def printWeights():
     for layerInd in range(len(layers)):
         if layerInd==0 or layerInd==totLayCount-1:
